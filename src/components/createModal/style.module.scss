@@ -1,0 +1,87 @@
+.content {
+    background-color: red;
+    position: absolute;
+    top: 6.25rem;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 18.625rem;
+    height: 19.0625rem;
+    background-color: var(--grey-three);
+    border-radius: 0.3125rem;
+    .divContent {
+        display: flex;
+        align-items: center;
+        background-color: var(--grey-two);
+        justify-content: space-between;
+        padding: 1.25rem;
+        height: 10%;
+        border-radius: 0.3125rem;
+
+        h2 {
+            color: var(--grey-zero);
+            font-size: 0.6875rem;
+            font-weight: 700;
+            line-height: 1.5rem;
+            ;
+        }
+
+        button {
+            background-color: var(--grey-two);
+            color: var(--grey-zero);
+            border: transparent;
+            text-align: baseline;
+            font-size: 0.75rem;
+        }
+    }
+
+    form {
+        padding: 1.0625rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.625rem;
+
+        .divSelect {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            color: var(--grey-zero);
+            font-size: 0.5625rem;
+
+            select {
+                width: 100%;
+                background-color: var(--grey-two);
+                height: 2.375rem;
+                border-radius: 0.3125rem;
+                border: transparent;
+                color: var(--grey-one);
+                padding: 0rem 0.625rem;
+            }
+
+            select:hover {
+                border: 0.0625rem solid var(--grey-zero);
+                transition: 0.5s;
+            }
+
+            select:focus {
+                outline: none;
+                color: var(--grey-zero);
+            }
+        }
+
+        button {
+            background-color: var(--color-primary);
+            border: transparent;
+            color: var(--grey-zero);
+            height: 3rem;
+            width: 100%;
+            border-radius: 0.3125rem;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            line-height: 1.3125rem;
+        }
+    }
+}

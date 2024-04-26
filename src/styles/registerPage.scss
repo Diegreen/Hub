@@ -1,0 +1,133 @@
+.registerPageSection {
+    width: 90%;
+    height: 100%;
+
+    .divTwo {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2.125rem;
+        align-items: center;
+        padding-top: 3rem;
+
+        img {
+            width: 6.0994rem;
+            height: 1.0562rem;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 4.9713rem;
+            height: 1.9969rem;
+            background-color: var(--grey-three);
+            color: var(--grey-zero);
+            border: transparent;
+            border-radius: 0.3125rem;
+            font-size: 0.5994rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375rem;
+        align-items: center;
+        width: 100%;
+        padding-top: 2.1875rem;
+
+        h2 {
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            color: var(--grey-zero);
+        }
+
+        p {
+            font-size: 0.75rem;
+            line-height: 1.375rem;
+            font-weight: 400;
+            color: var(--grey-one);
+        }
+    }
+
+    form {
+        border-radius: 0.8125rem;
+        background-color: var(--grey-three);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0rem 1.2375rem;
+        gap: 1.55rem;
+        padding-bottom: 1.5625rem;
+        height: 80%;
+
+        select {
+            width: 100%;
+            height: 2.375rem;
+            background-color: var(--grey-two);
+            border: transparent;
+            border-radius: 0.3125rem;
+            color: var(--grey-one);
+            padding: 0rem 0.9375rem;
+        }
+
+        .selectLabel {
+            font-size: 0.6088rem;
+            color: var(--grey-zero);
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--color-primary);
+            border: transparent;
+            border-radius: 0.3125rem;
+            color: var(--grey-zero);
+            height: 2.375rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .registerPageSection {
+        width: 35%;
+        margin-top: 1.625rem;
+        height: 95%;
+        .divTwo {
+            padding-top: 0rem;
+            padding-bottom: 1.225rem;
+        }
+
+        .div {
+            h2 {
+                font-size: 1.125rem;
+            }
+
+            p {
+                font-size: 0.75rem;
+            }
+        }
+
+        form {
+
+            height: 95%;
+            .selectLabel {
+                font-size: 0.7612rem;
+            }
+
+            select {
+                height: 3rem;
+                font-size: 1.025rem;
+            }
+
+            button {
+                height: 3rem;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}

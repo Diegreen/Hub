@@ -1,0 +1,50 @@
+.divTechs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    width: 100%;
+
+    .subDivTechs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            color: var(--grey-zero);
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--grey-three);
+            color: var(--grey-zero);
+            width: 2rem;
+            height: 2rem;
+            border: transparent;
+            border-radius: 0.3rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+   .techList {
+        background-color: var(--grey-three);
+        max-width: 100%;
+        display: flex;
+        padding: 0rem 1.5625rem ;
+        flex-direction: column;
+        border-radius: 0.3rem;
+        max-height: 25rem;
+        min-height: 20rem;
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .divTechs {
+        padding: 0;
+        width: 50%;
+    }
+}
